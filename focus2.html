@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<span id="result">cliquer sur une box</span>
+<form>
+<input type="text" id="t1"><br>
+<input type="text" id="t2"><br>
+<input type="text" id="t3"><br>
+<textarea id="t4"></textarea>
+</form>
+<script src="jquery.js"></script>
+<script>
+  $(function(){
+       var lefocus;
+       $('input, textarea').focus(function(){
+        lefocus = $(this).attr('id');
+        $('#result').text('l identifiant est : '+lefocus);
+    });
+  });
+</script>
+</body>
+</html>

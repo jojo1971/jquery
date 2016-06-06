@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button>Cliquer ici</button>
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       $('button').on('nom_function',function(event,param){
+           alert('Bonjour '+param);
+       });
+       $('button').click(function(){
+           $('button').trigger('nom_function','Popol');
+       });
+    });
+</script>
+</body>
+</html>

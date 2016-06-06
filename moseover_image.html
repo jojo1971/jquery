@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img id="image" src="homme.png">
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+        $('#image').mouseover(function(){
+            $(this).attr('src','homme_grand.png');
+        });
+        $('#image').mouseout(function(){
+            $(this).attr('src','homme.png');
+        });
+    });
+
+</script>
+</body>
+</html>

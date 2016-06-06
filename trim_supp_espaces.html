@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+Ecrire du texte avec des espaces :<br><br>
+<input type="text" id="text"/>
+<button id="action">cliquer pour changer</button>
+<pre id="result"></pre>
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       $('#action').click(function() {
+           var text = $('#text').val();
+           $('#result').html('le texte avant :"'+text+'"'+
+                         '<br>Le texte après :"'+ $.trim(text)+'"');
+       });
+    });
+</script>
+</body>
+</html>

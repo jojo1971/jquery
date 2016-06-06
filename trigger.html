@@ -5,19 +5,21 @@
     <title></title>
 </head>
 <body>
-<img src="juste.png" id="image">
-<span id="message"></span>
-<button>cliquer pour changer le texte</button>
+<img src="homme.png"><br>
+<span id="message"></span><br>
+<button id="bout">cliquer ici</button>
 
 <script src="jquery.js"></script>
 <script>
     $(function(){
-       $('#image').click(function(event, texte){
-           if(texte == undefined){
-               texte = 'par vous.';
-               $('#message').text('L\');
-           }
-       });
+       $('img').click(function(event, texte){
+            if(texte == undefined)
+            texte = 'par vous';
+            $('#message').text('L\'image a été cliquée '+texte).fadeIn(1000).fadeOut(2000);
+        });
+        $('button').click(function () {
+            $('img').trigger('click','par jquery');
+        });
     });
 </script>
 </body>

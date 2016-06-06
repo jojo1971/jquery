@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<span id="uns"></span><br>
+<span id="deux"></span><br>
+<button id="filtre1">Après le 5e</button>
+<button id="filtre2">sans Yanis, Hugo, Clara </button>
+<button id="filtre3">Avant le 5e</button>
+
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       var Tab1 = ['Luca', 'Emma', 'Mathis', 'Jade', 'Léa', 'Enzo', 'Chloé', 'Nathan', 'Manon', 'Noah', 'Sarah ', 'Louis', 'Luna', 'Kylian', 'Clara',
+           'Ethan', 'Camille', 'Hugo', 'Lylou', 'Théo', 'Zoé', 'Yanis', 'Maélys'] ;
+        var Tab2;
+        $('#uns').text('Tableau original :'+Tab1.join(', '));
+        $('#filtre1').click(function(){
+            Tab2 = $.grep(Tab1,function(el,ind){
+               return (ind > 4);
+            });
+            $('#deux').text('Après le 5e :'+Tab2.join(', '));
+        });
+        $('#filtre2').click(function(){
+            Tab2 = $.grep(Tab1, function(el,ind){
+               return (el != 'Yanis' && el != 'Hugo' && el != 'Clara');
+            });
+            $('#deux').text('Sans trois elt :'+Tab2.join(', '));
+        });
+        $('#filtre3').click(function(){
+            Tab2 = $.grep(Tab1, function(el,ind){
+                return (ind > 4);
+            }, true);
+        $('#deux').text('Avant le 5e :'+Tab2.join(', '));
+        });
+
+    });
+</script>
+</body>
+</html>

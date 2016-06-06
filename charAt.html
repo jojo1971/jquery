@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+Entrer texte et position :<br>
+<input type="text" id="texte"/><br><br>
+<input type="text" id="position"/><br>
+<button id="action">cliquer ici pour connaître la position</button><br>
+<div id="result"></div>
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+
+        $('#action').click(function(){
+              var text = $('#texte').val();
+              var pos = $('#position').val();
+            var result = 'La lettre à la position '+pos+
+            ' est la lettre :'+text.charAt(pos);
+            $('#result').text(result);
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img id="un" src="homme_grand.png"><br>
+<button id="action">cliquer pour changer image</button>
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       $('#action').click(function () {
+           $('#un').replaceWith('<img src="femme.png"/>')
+       });
+    });
+</script>
+</body>
+</html>

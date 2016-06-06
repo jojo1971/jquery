@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="radio">test<br>
+<input type="checkbox">test1<br>
+<input type="text">
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       function efface_formulaire () {
+  $(':input')
+   .not(':button, :submit, :reset, :hidden')
+   .val('')
+   .prop('checked', false)
+   .prop('selected', false);
+}
+        $(window.onload(efface_formulaire()));
+
+    });
+</script>
+</body>
+</html>
