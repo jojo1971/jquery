@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       var tab = ['Luca', 'Emma', 'Mathis', 'Jade', 'Léa', 'Enzo', 'Chloé'];
+        alert('Emma est à la position : '+$.inArray('Emma', tab));
+        alert('Chloé est à la position : '+$.inArray('Chloé', tab));
+        alert('Jade n\'est pas après la position 5 : '+$.inArray('Jade', tab, 5));
+        alert('Momo n\'est pas dans le tabeau : '+$.inArray('Momo', tab));
+
+    });
+</script>
+</body>
+</html>

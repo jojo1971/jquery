@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        #contenu{
+            border: 1px solid black;
+            float: left;
+            width: 400px;
+            height: 600px;
+            margin-left: 20px;
+        }
+        #controle {
+            border: 1px solid black;
+            float: left;
+            width: 400px;
+            height: 600px;
+            margin-left: 20px;
+        }
+        #controle div{
+            padding-top: 10px;
+            padding-left: 5px;
+            padding-bottom: 20px;
+
+        }
+        p{
+            padding-left: 5px;
+            padding-right: 5px;
+            font-family: 'Times New Roman';
+        }
+        img{
+            padding-left: 100px;
+        }
+        label{
+            width: 140px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="contenu">
+    <p>
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+        cupiditate non provident, similique sunt
+        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+    </p>
+    <img src="aigle.jpg" width="50px">
+    <p>
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+        excepturi sint occaecati cupiditate non provident,
+        similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+    </p>
+</div>
+<div id="controle">
+    <div>
+        <label for="couleur">Couleur Fond</label>
+        <select id="couleur">
+            <option value="#FFFFFF">Blanc</option>
+            <option value="#9FFEF1">Bleu</option>
+            <option value="#9FFECE">Vert</option>
+            <option value="#FAFE9F">Jaune</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="texte">Texte</label>
+        <select id="texte">
+            <option value="Normal">Normal</option>
+            <option value="Gras">Gras</option>
+            <option value="Italique">Italique</option>
+            <option value="Souligne">Souligné</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="police">Police</label>
+        <select id="police">
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Arial">Arial</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="police-prem-phrase">Police 1e phrase</label>
+        <select id="police-prem-phrase">
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Arial">Arial</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="prem-car-phrases">Prem caract phrases</label>
+        <select id="prem-car-phrases">
+            <option value="Normal">Normal</option>
+            <option value="Gras">Gras</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="mot">Mot en rouge</label>
+        <input type="text" id="mot" size="2">
+        <button id="couleurMot">OK</button>
+    </div>
+
+    <div>
+        <label for="bordure-images">Bordure images</label>
+        <select id="bordure-images">
+            <option value="Rien">Rien</option>
+            <option value="Simple">Simple</option>
+            <option value="Double">Double</option>
+        </select>
+    </div>
+
+    <div>
+        <button id="raz">RAZ formulaire</button>
+    </div>
+</div>
+
+<script src="jquery.js"></script>
+<script>
+    // Entrer les instructions jQuery ici
+</script>
+</div>
+</body>
+</html>

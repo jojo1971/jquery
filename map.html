@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<span id="uns"></span>
+<span id="deux"></span><br>
+<button id="copie1">Mettre en majuscules</button><br>
+<button id="copie2">Mettre en minuscules</button>
+
+<script src="jquery.js"></script>
+<script>
+    $(function () {
+        var tab1 = ['Luca', 'Emma', 'Mathis', 'Jade', 'Léa', 'Enzo', 'Chloé'];
+        var  tab2;
+       $('#copie1').click(function(){
+            tab2 = $.map(tab1,function(el,ind){
+               return (el.toUpperCase());
+            });
+           $('#deux').text('tout en majuscules :'+tab2.join(', '));
+       });
+
+        $('#copie2').click(function(){
+            tab2 = $.map(tab1,function(el,ind){
+               return (ind + ' : '+el.toLowerCase());
+            });
+           $('#deux').text('tout en minuscules :'+tab2.join(', '));
+       });
+    });
+</script>
+</body>
+</html>
