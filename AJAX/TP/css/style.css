@@ -1,0 +1,18 @@
+div{
+    border: 1px dotted gray;
+    margin: 10px;
+    padding: 10px;
+}
+#divCat{
+    display: inline;
+}
+table th{
+    padding:  10px;
+    background-color: pink;
+    border: 1px dotted gray;
+}
+table td{
+    padding:  10px;
+    background-color: #ffffff;
+    border: 1px dotted gray;
+}
