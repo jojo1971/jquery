@@ -2,8 +2,8 @@
 require_once('conn.php');
 ?>
 <?php
-if(isset($_GET['idCat']))
-    $idCat = $_GET['idCat'];
+if(isset($_GET['ID_CAT']))
+    $idCat = $_GET['ID_CAT'];
 else{
     $idCat= 1;
 }
@@ -17,7 +17,7 @@ $rs = mysqli_query($conn, $req);
         <th>QUANTITE</th><th>PROMO</th>
     </tr>
     <?php
-    while($q=mysqli_fetch_assoc($rs)){?>
+    while($q = mysqli_fetch_assoc($rs)){?>
         <tr>
             <td><?php echo ($q['ID_PROD'])?></td>
             <td><?php echo ($q['DESIGNATION'])?></td>
